@@ -144,6 +144,18 @@ nav {
     flex-direction: column;
     transition: 0.3s ease-in;
   }
+  
+
+  .nav-Links {
+  position: absolute;
+  top: 60px;
+  left: -100%;   /* hide initially */
+  background-color: #0f172a; /* optional: match navbar color */
+  width: 100%;
+  flex-direction: column;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
 
   .nav-Links a:hover {
     color: #ff9800;
@@ -245,7 +257,7 @@ main{
 .box{
   width:25%;
   min-width:20%;
-  aspect-ratio: 7/8;
+  aspect-ratio: 7/8;              
   background-color: rgb(228, 227, 227);
   border:2px solid transparent;
   border-radius: 10px;
